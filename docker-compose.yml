@@ -1,0 +1,7 @@
+services:
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "80:80"
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
