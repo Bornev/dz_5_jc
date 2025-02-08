@@ -1,4 +1,10 @@
 services:
+  java-apps:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./backup:/app/backup
+
   dvwa:
     image: vulnerables/web-dvwa
     ports:
